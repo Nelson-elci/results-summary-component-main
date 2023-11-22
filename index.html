@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>results-summary-component-main</title>
+    <link rel="icon" type="img/png" sizes="32*32" href="images/favicon-32x32.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-color: rgb(233, 233, 233);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        #wholebody{
+            background-color: white;
+            position: relative;
+            width: 650px;
+            height: 400px;
+            top: 100px;
+            margin: auto;
+            border-radius: 15px;
+        }
+        .secondbox{
+            background: linear-gradient(to bottom, rgb(94, 7, 255), rgb(82, 6, 221));
+            position: relative;
+            width: 325px;
+            height: 400px;
+            border-radius: 15px;
+            color: white;
+            float: left;
+        }
+        .secondbox span{
+            position: relative;
+            top: 40px;
+            font-weight: 500;
+        }
+        #circle{
+            margin-top: 70px;
+            width: 170px;
+            aspect-ratio: 1;
+            background: linear-gradient(to bottom, rgb(65, 4, 177), rgb(93, 6, 255));
+            border-radius: 50%;
+            margin-left: 80px;
+        }
+        h3{
+            font-size: 70px;
+            position: relative;
+            top: 40px;
+            
+        }
+        #circle p{
+            color: rgb(155, 148, 255);
+            font-size: 12px;
+            position: relative;
+            bottom: 45px;
+            
+        }
+        p {
+            font-size: 12px;
+            position: relative;
+            bottom: 45px;
+            word-spacing: 5px;
+        }
+        h4{
+            font-size: 25px;
+            position: relative;
+            bottom: 25px;
+        }
+        .backbox{
+            text-align: left;
+            position: relative;
+            left: 30px;
+            top: 40px;
+            
+        }
+             
+        .backbox #bar1 {
+            background-color: rgb(255, 241, 241);
+            height: 40px;
+            width: 250px;
+            margin-left: 320px;
+            margin-top: 20px;
+            border-radius: 5px;
+            
+        }
+        .backbox #bar2 {
+            background-color: rgb(255, 241, 241);
+            height: 40px;
+            width: 250px;
+            margin-left: 320px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .backbox #bar3 {
+            background-color: rgb(235, 252, 255);
+            height: 40px;
+            width: 250px;
+            margin-left: 320px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .backbox #bar4 {
+            background-color: rgb(235, 252, 255);
+            height: 40px;
+            width: 250px;
+            margin-left: 320px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .backbox #bar1 span {
+            padding: 20px;
+            position: relative;
+            top: 9px; 
+        }
+        i{
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .backbox #bar2 span {
+            padding: 20px;
+            position: relative;
+            top: 9px; 
+        }
+        .backbox #bar3 span {
+            padding: 20px;
+            position: relative;
+            top: 9px; 
+        }
+        .backbox #bar4 span {
+            padding: 20px;
+            position: relative;
+            top: 9px; 
+        }
+        button{
+            background-color: rgb(24, 24, 88);
+            color: white;
+            border: none;
+            width: 220px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        .attribution a:link, :visited{
+            text-decoration: none;
+            color: blue;
+            font-weight: 500;
+        }
+        .attribution a:hover{
+            color: rgb(2, 2, 83);
+        }
+        #whole{
+            position: relative;
+            top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wholebody">
+  
+        <div class="secondbox">
+            <span>Your Result</span>
+
+            <article id="circle">
+                <h3>76</h3>
+                <p>of 100</p>
+            </article> 
+
+            <h4>Great</h4>
+            <p>You scored higher than 65% of<br> the people who have taken?<br> these tests.</p>
+        </div>
+        <div class="backbox">
+            <span style="font-weight: 500;"> Summary</span>
+            <div id="whole">
+            <div id="bar1">
+                <i class='bx bx-shocked'></i>
+                <span>
+                    Reaction &emsp;&emsp;&emsp;
+                    80 / 100
+                </span>
+            </div>
+
+            <div id="bar2">
+                <i class='bx bx-brain'></i>
+                <span> Memory&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    92 / 100
+                </span>
+            </div>
+
+            <div id="bar3">
+                <i class='bx bx-message-rounded-minus'></i>
+                <span> 
+                    Verbal&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    61 / 100
+                </span>  
+            </div>
+
+            <div id="bar4">
+                <i class='bx bx-low-vision'></i>
+                <span>
+                    Visual&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    72 / 100
+                </span>
+                </div>
+            </div>
+            <button>
+                Continue
+            </button>
+        </div>
+        <br><br><br><br>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            <br>Coded by <a href="#">Nelson</a>
+          </div>
+    </div>
+    
+</body>
+</html>
